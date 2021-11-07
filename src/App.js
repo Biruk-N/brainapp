@@ -31,12 +31,7 @@ onInputChange =(event)=>{
 onButtonSubmit = () =>{
   console.log('click');
  
-
-        
-    
-
 }
-
 
  render(){ 
  	return (
