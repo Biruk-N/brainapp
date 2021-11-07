@@ -5,7 +5,11 @@ import Logo from './Component/Logo/Logo';
 import ImageLinkForm from './Component/ImageLinkForm/ImageLinkForm';
 import Rank from './Component/Rank/Rank';
 import Particles from 'react-particles-js';
+import Clarifai from 'clarifai';
 
+const app = new Clarifai.App({
+  apiKey: '03cee12239894aeea846f306b3c9947c'
+ });
 const ParticlesOptions = {
             		particles: {
             		number:{
