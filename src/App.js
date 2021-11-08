@@ -76,8 +76,10 @@ onButtonSubmit = () => {
   // to:
   // .predict('53e1df302c079b3db8a0a36033ed2d15', this.state.input)
   app.models
-    .predict('53e1df302c079b3db8a0a36033ed2d15',
-      this.state.input)
+    .predict(
+    '53e1df302c079b3db8a0a36033ed2d15',
+   " https://thumbs.dreamstime.com/z/beautiful-face-young-woman-health-fresh-skin-perfect-eyes-beautiful-face-young-woman-health-fresh-skin-157476477.jpg"
+    )
     .then(response => {
       console.log('hi', response)
       if (response) {
