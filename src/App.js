@@ -113,14 +113,19 @@ onButtonSubmit = () => {
                params={ParticlesOptions}
              />
        <Navigation />
-       <Signin />
-       <Logo />
+       {
+         this.state.route === 'Signin' 
+
+         ?<Signin />
+         :<Logo />
        
        <Rank />
        <ImageLinkForm 
         onInputChange={this.onInputChange} 
         onButtonSubmit={this.onButtonSubmit}/>
         <FaceRecognition />
+        }
+      
 
          </div>
    );
