@@ -117,15 +117,16 @@ onButtonSubmit = () => {
          this.state.route === 'Signin' 
 
          ?<Signin />
-         :<Logo />
-       }
+         :<div>
+         <Logo />
+       
        <Rank />
        <ImageLinkForm 
         onInputChange={this.onInputChange} 
         onButtonSubmit={this.onButtonSubmit}/>
         <FaceRecognition />
-        
-      
+        </div>
+      }
 
          </div>
    );
