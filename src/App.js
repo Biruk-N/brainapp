@@ -118,13 +118,13 @@ onButtonSubmit = () => {
 
          ?<Signin />
          :<Logo />
-       
+       }
        <Rank />
        <ImageLinkForm 
         onInputChange={this.onInputChange} 
         onButtonSubmit={this.onButtonSubmit}/>
         <FaceRecognition />
-        }
+        
       
 
          </div>
