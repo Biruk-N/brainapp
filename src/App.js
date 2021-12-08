@@ -112,8 +112,9 @@ onButtonSubmit = () => {
                params={ParticlesOptions}
              />
        <Navigation />
-       <Logo />
        <Signin />
+       <Logo />
+       
        <Rank />
        <ImageLinkForm 
         onInputChange={this.onInputChange} 
