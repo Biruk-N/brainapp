@@ -21,7 +21,7 @@ const Signin = ({onRouteChange}) =>{
                 </fieldset>
                 <div className="">
                 <input 
-                    onClick
+                    onClick={onRouteChange}
                     className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
                     type="submit" 
                     value="Sign in" 
