@@ -106,7 +106,7 @@ onButtonSubmit = () => {
 }
 
 onRouteChange = () => {
-  this.setState('home');
+  this.setState({route: 'home'});
 }
  render(){ 
  	return (
