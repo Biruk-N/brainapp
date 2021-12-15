@@ -105,7 +105,9 @@ onButtonSubmit = () => {
     .catch(err => console.log(err));
 }
 
-
+onRouteChange = () => {
+  this.setState('home');
+}
  render(){ 
  	return (
      <div className="App">
