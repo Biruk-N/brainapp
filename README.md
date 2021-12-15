@@ -20,3 +20,4 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## brainapp
+It's a react app that uses clarify api and detect face using url or internal images.
