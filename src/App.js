@@ -114,7 +114,8 @@ onRouteChange = () => {
                  <Particles className='particles'
                params={ParticlesOptions}
              />
-       <Navigation />
+       <Navigation onRouteChange={this.onRouteChange}/>
+       
        {
          this.state.route === 'Signin' 
 
