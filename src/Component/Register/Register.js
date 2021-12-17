@@ -7,7 +7,7 @@ const Register = ({onRouteChange}) =>{
             <main className="pa4 black-80">
             <form className="measure ">
                 <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                <legend className="f1 fw6 ph0 mh0">Registeration Form</legend>
+                <legend className="f1 fw6 ph0 mh0">Registration Form</legend>
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" for="name">Name</label>
                     <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="name"  id="name" />
