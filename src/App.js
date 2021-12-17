@@ -32,7 +32,8 @@ constructor(){
   super();
   this.state={
     input:'',
-    route: 'Signin'
+    route: 'Signin',
+    isSignedIn: 'false'
   }
 }
 
