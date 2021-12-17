@@ -5,6 +5,7 @@ import FaceRecognition from './Component/FaceRecognition/FaceRecognition';
 import Logo from './Component/Logo/Logo';
 import ImageLinkForm from './Component/ImageLinkForm/ImageLinkForm';
 import Signin from './Component/Signin/Signin';
+import Register from './Component/Register/Register';
 import Rank from './Component/Rank/Rank';
 
 import Particles from 'react-particles-js';
@@ -105,9 +106,10 @@ onButtonSubmit = () => {
     .catch(err => console.log(err));
 }
 
-onRouteChange = () => {
-  this.setState({route: 'home'});
+onRouteChange = (route) => {
+  this.setState({route: route});
 }
+// change onRouteChange from default to route that pass from  signinJs
  render(){ 
  	return (
      <div className="App">
@@ -117,18 +119,26 @@ onRouteChange = () => {
        <Navigation onRouteChange={this.onRouteChange}/>
        
        {
-         this.state.route === 'Signin' 
+         // to show signin component first 
+         this.state.route === 'home' 
+         
+         //this is a condition to change state 
 
-         ?<Signin onRouteChange={this.onRouteChange}/>
-         :<div>
-         <Logo />
-       
+         ? <div>
+        <Logo />
        <Rank />
        <ImageLinkForm 
         onInputChange={this.onInputChange} 
         onButtonSubmit={this.onButtonSubmit}/>
         <FaceRecognition />
         </div>
+        :(
+          this.state.route === 'Signin'
+          ? <Signin onRouteChange={this.onRouteChange}/>
+          : <Register onRouteChange={this.onRouteChange}/>
+          )
+       
+        
       }
 
          </div>
